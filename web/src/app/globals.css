@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@layer base {
+  :root {
+    --background: #0f172a; /* Slate 900 */
+    --foreground: #f8fafc; /* Slate 50 */
+    --card: rgba(30, 41, 59, 0.7); /* Slate 800 with opacity */
+    --card-foreground: #f1f5f9;
+    --primary: #3b82f6; /* Blue 500 */
+    --primary-foreground: #ffffff;
+    --muted: #334155;
+    --muted-foreground: #94a3b8;
+    --border: #334155;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Animations */
+@keyframes slideUpFade {
+  0% { transform: translateY(10px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.animate-slide-up {
+  animation: slideUpFade 0.4s ease-out forwards;
+}
+
+/* Glassmorphism helpers */
+.glass {
+  background: var(--card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
