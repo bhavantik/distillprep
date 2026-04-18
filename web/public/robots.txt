@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://distillprep.com
+
+# Sitemaps
+Sitemap: https://distillprep.com/sitemap.xml
