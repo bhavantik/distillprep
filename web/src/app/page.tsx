@@ -1,4 +1,20 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "DistillPrep | Master Coding Interviews with MCQs",
+  description:
+    "Practice FAANG-level MCQs for Python, SQL, and ML interviews. Deep conceptual questions with detailed explanations — not rote memorization.",
+  alternates: {
+    canonical: "https://distillprep.com",
+  },
+  openGraph: {
+    title: "DistillPrep | Master Coding Interviews with MCQs",
+    description:
+      "High-quality, FAANG-level MCQs focused on deep conceptual understanding and real-world traps.",
+    url: "https://distillprep.com",
+  },
+};
 
 export default function Home() {
   const topics = [
