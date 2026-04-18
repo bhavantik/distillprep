@@ -21,9 +21,10 @@ export const metadata: Metadata = {
     template: "%s | DistillPrep",
   },
   description:
-    "FAANG-level MCQs for Python, SQL, and ML with deep explanations. Ace your next technical interview with DistillPrep.",
+    "MAANG/FAANG-level MCQs for Python, SQL, and ML with deep explanations. Ace your next technical interview with DistillPrep.",
   keywords: [
     "coding interview preparation",
+    "MAANG interview questions",
     "FAANG interview questions",
     "Python interview MCQs",
     "SQL interview questions",
@@ -52,7 +53,7 @@ export const metadata: Metadata = {
     siteName: "DistillPrep",
     title: "DistillPrep | Master Coding Interviews with MCQs",
     description:
-      "FAANG-level MCQs for Python, SQL, ML — with deep explanations. Stop guessing, start mastering.",
+      "MAANG and FAANG-level MCQs for Python, SQL, ML — with deep explanations. Stop guessing, start mastering.",
     images: [
       {
         url: "/og-image.png",
@@ -66,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "DistillPrep | Master Coding Interviews with MCQs",
     description:
-      "FAANG-level MCQs for Python, SQL, ML — with deep explanations.",
+      "MAANG/FAANG-level MCQs for Python, SQL, ML — with deep explanations.",
     images: ["/og-image.png"],
     creator: "@distillprep",
   },
@@ -82,7 +83,7 @@ const websiteSchema = {
   name: "DistillPrep",
   url: BASE_URL,
   description:
-    "FAANG-level MCQ interview preparation platform for Python, SQL, and ML.",
+    "MAANG & FAANG-level MCQ interview preparation platform for Python, SQL, and ML.",
   potentialAction: {
     "@type": "SearchAction",
     target: `${BASE_URL}/quiz/{search_term_string}`,

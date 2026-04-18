@@ -4,14 +4,14 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "DistillPrep | Master Coding Interviews with MCQs",
   description:
-    "Practice FAANG-level MCQs for Python, SQL, and ML interviews. Deep conceptual questions with detailed explanations — not rote memorization.",
+    "Practice MAANG/FAANG-level MCQs for Python, SQL, and ML interviews. Deep conceptual questions with detailed explanations — not rote memorization.",
   alternates: {
     canonical: "https://distillprep.com",
   },
   openGraph: {
     title: "DistillPrep | Master Coding Interviews with MCQs",
     description:
-      "High-quality, FAANG-level MCQs focused on deep conceptual understanding and real-world traps.",
+      "High-quality, MAANG & FAANG-level MCQs focused on deep conceptual understanding and real-world traps.",
     url: "https://distillprep.com",
   },
 };
@@ -61,7 +61,7 @@ export default function Home() {
         </h1>
         
         <p className="text-lg md:text-xl text-slate-400 max-w-2xl mb-16">
-          High-quality, FAANG-level multiple choice questions focused on deep conceptual understanding, edge cases, and real-world traps. Not just rote learning.
+          High-quality, MAANG & FAANG-level multiple choice questions focused on deep conceptual understanding, edge cases, and real-world traps. Not just rote learning.
         </p>
 
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
