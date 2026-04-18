@@ -3,8 +3,8 @@ import { MetadataRoute } from "next";
 const BASE_URL = "https://distillprep.com";
 
 // Known topics with content — extend this list as new topics are added
-const LIVE_TOPICS = ["python"];
-const COMING_SOON_TOPICS = ["sql", "ml"];
+const LIVE_TOPICS = ["python-mcq"];
+const COMING_SOON_TOPICS = ["sql-mcq", "ml-interview-mcqs", "genai-interview-mcqs"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -19,14 +19,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const liveQuizPages: MetadataRoute.Sitemap = LIVE_TOPICS.map((topic) => ({
-    url: `${BASE_URL}/quiz/${topic}`,
+    url: `${BASE_URL}/${topic}`,
     lastModified: now,
     changeFrequency: "weekly" as const,
     priority: 0.9,
   }));
 
   const comingSoonPages: MetadataRoute.Sitemap = COMING_SOON_TOPICS.map((topic) => ({
-    url: `${BASE_URL}/quiz/${topic}`,
+    url: `${BASE_URL}/${topic}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.6,

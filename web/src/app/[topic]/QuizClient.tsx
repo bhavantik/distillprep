@@ -17,9 +17,10 @@ interface Question {
 
 interface QuizClientProps {
   topic: string;
+  displayName: string;
 }
 
-export default function QuizClient({ topic }: QuizClientProps) {
+export default function QuizClient({ topic, displayName }: QuizClientProps) {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answeredRecord, setAnsweredRecord] = useState<
@@ -124,6 +125,10 @@ export default function QuizClient({ topic }: QuizClientProps) {
         {/* Main Content Area */}
         <main className="flex-1 max-w-3xl w-full mx-auto pb-24">
           <div className="animate-slide-up">
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-8 tracking-tight">
+              {displayName}
+            </h1>
+            
             <QuestionCard
               difficulty={currentQ.difficulty}
               questionNumber={currentIndex + 1}

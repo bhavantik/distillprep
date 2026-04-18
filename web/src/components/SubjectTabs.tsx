@@ -2,11 +2,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const SUBJECTS = [
-  { id: "python", name: "Python" },
-  { id: "sql", name: "SQL" },
-  { id: "ml", name: "ML" },
-  { id: "nlp", name: "NLP" },
-  { id: "genai", name: "GenAI" },
+  { id: "python-mcq", name: "Python" },
+  { id: "genai-interview-mcqs", name: "GenAI" },
+  { id: "sql-mcq", name: "SQL" },
+  { id: "ml-interview-mcqs", name: "ML" },
 ];
 
 export function SubjectTabs() {
@@ -22,11 +21,11 @@ export function SubjectTabs() {
           ← Home
         </Link>
         {SUBJECTS.map((sub) => {
-          const isActive = pathname.includes(`/quiz/${sub.id}`);
+          const isActive = pathname === `/${sub.id}`;
           return (
             <Link
               key={sub.id}
-              href={`/quiz/${sub.id}`}
+              href={`/${sub.id}`}
               className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all shrink-0 ${
                 isActive
                   ? "bg-slate-800 text-white shadow-sm border border-slate-700"
